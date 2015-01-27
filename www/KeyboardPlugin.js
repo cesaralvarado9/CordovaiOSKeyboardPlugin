@@ -33,7 +33,6 @@ function keyboardWillShow(height){
  * Called by Obj-C code
  */
 function keyboardWillHide(){
-    $('body').trigger('keyboardWillHide');
     var event = new Event('keyboardWillHide');
     document.body.dispatchEvent(event);
 }
