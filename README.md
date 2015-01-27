@@ -1,25 +1,13 @@
 # iOS Keyboard Plugin
 
+(a fork to mhweiner Keyboard PlugIn. https://github.com/mhweiner/CordovaiOSKeyboardPlugin/)
 This plugin allows you to subscribe to native UIKeyboard events via jQuery.
 
 Some of the things you can do :
 
-- Subscribe to jQuery events for native keyboard event notifications (willShow, didShow, willHide, didHide)
+- Subscribe to javascript events for native keyboard event notifications (willShow, didShow, willHide, didHide)
 - See if the keyboard is open or not
 - Get the height of the keyboard (to accommodate different languages, etc)
-
-# What's changed recently
-
-3/13/14
-
-- I had to remove the ability for the app to prevent the keyboard from pushing up the app. iOS7.1 broke it, and it
-was an unmaintainable hack. There is no documented way to change the keyboard behavoir or appearance in a UIWebView,
-with a few exceptions. See: https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIWebView_Class/Reference/Reference.html and
-and https://developer.apple.com/library/ios/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/KeyboardManagement/KeyboardManagement.html.
-
-- Plugin no longer requires jQuery
-
-- Plugin auto-instantiates and should work on all versions of Cordova 2.9+.
 
 # Installation
 
